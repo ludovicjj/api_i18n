@@ -15,8 +15,8 @@ use Exception;
 class ArticleProcessor implements ProcessorInterface
 {
     public function __construct(
-        private EntityManagerInterface $entityManager,
-        private ArticleRepository $articleRepository
+        private readonly EntityManagerInterface $entityManager,
+        private readonly ArticleRepository $articleRepository
     ) {
     }
 
